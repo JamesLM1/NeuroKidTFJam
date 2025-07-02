@@ -1,0 +1,204 @@
+/* Fuente principal */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F0F1F5;
+}
+
+/* Barra de navegación */
+.navbar {
+    background-color: #a0dc80;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 28px;
+    font-weight: 700;
+    color: rgb(109, 106, 106);
+}
+
+.logo img {
+    height: 4.5rem;
+    width: auto;
+    padding-right: 0.5rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+    padding: 10px 15px;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: #d7edcc;
+}
+
+/* Sección inicio */
+.inicio-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75vh;
+    background-color: #e6f4df;
+    padding: 40px 20px;
+}
+
+.inicio-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 1200px;
+    gap: 40px;
+}
+
+.texto-contenido {
+    flex: 1;
+    max-width: 600px;
+    text-align: left;
+    margin-left: 20px;
+}
+
+.titulo-principal {
+    font-size: 2.8em;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+.descripcion {
+    font-size: 1.2em;
+    color: #1a1a1a;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+/* Imagen lateral */
+.imagen-lateral {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.imagen-lateral img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .inicio-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .texto-contenido {
+        margin-left: 0;
+        max-width: 100%;
+    }
+
+    .imagen-lateral img {
+        max-width: 100%;
+    }
+}
+
+/* Sección Reporte */
+.reporte-section {
+    background-color: #cbebbc;
+    padding: 70px 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor-reportes {
+    max-width: 1200px;
+    width: 100%;
+    text-align: center;
+}
+
+.titulo-reportes {
+    font-size: 2.2em;
+    margin-bottom: 10px;
+    color: #0c0c0c;
+}
+
+/* Pacientes */
+.pacientes-section {
+    background-color: #dbf2d0;
+    padding: 80px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor-pacientes {
+    max-width: 1200px;
+    width: 100%;
+    text-align: center;
+}
+
+.titulo-pacientes {
+    font-size: 2em;
+    color: #0c0c0c;
+    margin: 20px 0 50px;
+}
+
+/* Caja de pacientes */
+.pacientes-box {
+    flex: 1;
+    min-width: 300px;
+    background-color: #ffffff;
+    border: 1px solid #555;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: left;
+}
+
+.paciente {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.paciente img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.paciente p {
+    margin: 0;
+    font-size: 0.95em;
+    color: #222;
+    line-height: 1.4;
+}
